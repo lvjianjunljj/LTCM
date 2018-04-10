@@ -14,7 +14,7 @@ namespace ConsoleTest
             Console.WriteLine(pd1("test1 ", "test2"));
             ProcessDelegate<string, int> pd2 = new ProcessDelegate<string, int>(new Program().ProgramMethod2);
             Console.WriteLine(pd2("text", 3));
-            //事件 关键字event
+            //key word event
             Test t = new Test();
             t.ProcessEvent += t_ProcessEvent1;
             t.ProcessEvent += new ProcessDelegateEvent(t_ProcessEvent2);
